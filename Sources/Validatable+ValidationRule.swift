@@ -9,12 +9,14 @@
 
 public extension Validatable {
 
+    @discardableResult
     public func validated<Rule: ValidationRule>(by rule: Rule) throws -> Self where Rule.Value == Self {
 
         return try validated(by: rule.validate)
 
     }
 
+    @discardableResult
     public func validated<
         C: Collection,
         Rule: ValidationRule

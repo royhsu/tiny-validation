@@ -11,6 +11,7 @@ public protocol ValidationRule {
 
     associatedtype Value
 
+    @discardableResult
     func validate(_ value: Value) throws -> Value
 
 }

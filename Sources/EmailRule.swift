@@ -13,6 +13,7 @@ public struct EmailRule: ValidationRule {
 
     private init(regex: String) { self.regex = regex }
 
+    @discardableResult
     public func validate(_ value: String) throws -> String {
 
         let range = value.range(
