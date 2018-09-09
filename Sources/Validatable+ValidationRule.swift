@@ -8,13 +8,13 @@
 // MARK: - ValidationRule
 
 public extension Validatable {
-    
+
     public func validated<Rule: ValidationRule>(by rule: Rule) throws -> Self where Rule.Value == Self {
-        
+
         return try validated(by: rule.validate)
-        
+
     }
-    
+
     public func validated<
         C: Collection,
         Rule: ValidationRule
@@ -23,13 +23,13 @@ public extension Validatable {
     where
         C.Element == Rule,
         Rule.Value == Self {
-        
+
         return try rules.reduce(self) { currentValue, rule in
-            
+
             return try currentValue.validated(by: rule)
-            
+
         }
-        
+
     }
-    
+
 }

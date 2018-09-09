@@ -14,12 +14,12 @@ public func XCTSuccess(
     file: StaticString = #file,
     line: UInt = #line
 ) {
-    
+
     XCTAssertTrue(
         true,
         message,
         file: file,
         line: line
     )
-    
+
 }

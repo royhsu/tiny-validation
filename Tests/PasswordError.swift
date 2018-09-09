@@ -8,10 +8,9 @@
 // MARK: - PasswordError
 
 internal enum PasswordError: Error {
-    
-    case minimumLength(Int)
-    
-    case maximumLength(Int)
-    
-}
 
+    case minimumLength(Int)
+
+    case maximumLength(Int)
+
+}

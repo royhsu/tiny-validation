@@ -8,7 +8,7 @@
 // MARK: - Validatable
 
 public protocol Validatable {
-    
+
     @discardableResult
     func validated(
         by validator: (Self) throws -> Self
@@ -20,11 +20,11 @@ public protocol Validatable {
 // MARK: - Default Implementation
 
 public extension Validatable {
-    
+
     @discardableResult
     public func validated(
         by validator: (Self) throws -> Self
     )
     rethrows -> Self { return try validator(self) }
-    
+
 }

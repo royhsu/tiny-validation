@@ -8,9 +8,9 @@
 // MARK: - ValidationRule
 
 public protocol ValidationRule {
-    
+
     associatedtype Value
-    
+
     func validate(_ value: Value) throws -> Value
-    
+
 }

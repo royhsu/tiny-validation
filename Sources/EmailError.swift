@@ -8,7 +8,7 @@
 // MARK: - EmailError
 
 public enum EmailError: Error {
-    
+
     case invalidFormat
-    
+
 }
