@@ -20,6 +20,7 @@
 		B06381C521451DC5004BC4DC /* MultipleRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */; };
 		B06381C821451E04004BC4DC /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C621451E00004BC4DC /* PasswordRule.swift */; };
 		B06381CB21451E71004BC4DC /* PasswordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C921451E60004BC4DC /* PasswordError.swift */; };
+		B06381CE2145358D004BC4DC /* Numberic+Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleRulesTests.swift; sourceTree = "<group>"; };
 		B06381C621451E00004BC4DC /* PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
 		B06381C921451E60004BC4DC /* PasswordError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordError.swift; sourceTree = "<group>"; };
+		B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numberic+Validatable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				B06381AC21450825004BC4DC /* Validatable.swift */,
 				B06381B021450A52004BC4DC /* String+Validatable.swift */,
+				B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */,
 				B06381B521451168004BC4DC /* ValidationRule.swift */,
 				B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */,
 				B06381B921451377004BC4DC /* EmailRule.swift */,
@@ -260,6 +263,7 @@
 				B06381BC214515B3004BC4DC /* EmailError.swift in Sources */,
 				B06381AD21450825004BC4DC /* Validatable.swift in Sources */,
 				B06381BA21451377004BC4DC /* EmailRule.swift in Sources */,
+				B06381CE2145358D004BC4DC /* Numberic+Validatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
