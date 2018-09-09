@@ -1,6 +1,6 @@
 //
 //  EmailRuleTests.swift
-//  TinyValidation
+//  TinyValidation Tests
 //
 //  Created by Roy Hsu on 2018/9/9.
 //
@@ -11,7 +11,7 @@ import XCTest
 
 @testable import TinyValidation
 
-internal class EmailRuleTests: XCTestCase {
+internal final class EmailRuleTests: XCTestCase {
 
     internal final func testValidateEmail() {
         
