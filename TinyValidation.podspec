@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => 'https://github.com/royhsu/tiny-validation.git', :tag => spec.version }
   spec.framework = 'Foundation'
   spec.source_files = 'Sources/*.swift'
-  spec.ios.deployment_target = '8.0'
+  spec.ios.source_files = 'Sources/iOS/*.swift'
+  spec.ios.deployment_target = '9.0'
   spec.swift_version = '4.2'
 end

@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B063818F21450513004BC4DC"
                BuildableName = "TinyValidation.framework"
-               BlueprintName = "TinyValidation"
+               BlueprintName = "TinyValidation iOS"
                ReferencedContainer = "container:TinyValidation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B063819D21450674004BC4DC"
                BuildableName = "TinyValidation Tests.xctest"
-               BlueprintName = "TinyValidation Tests"
+               BlueprintName = "TinyValidation iOS Tests"
                ReferencedContainer = "container:TinyValidation.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B063818F21450513004BC4DC"
             BuildableName = "TinyValidation.framework"
-            BlueprintName = "TinyValidation"
+            BlueprintName = "TinyValidation iOS"
             ReferencedContainer = "container:TinyValidation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,7 +66,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B063818F21450513004BC4DC"
             BuildableName = "TinyValidation.framework"
-            BlueprintName = "TinyValidation"
+            BlueprintName = "TinyValidation iOS"
             ReferencedContainer = "container:TinyValidation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B063818F21450513004BC4DC"
             BuildableName = "TinyValidation.framework"
-            BlueprintName = "TinyValidation"
+            BlueprintName = "TinyValidation iOS"
             ReferencedContainer = "container:TinyValidation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

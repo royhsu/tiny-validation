@@ -84,6 +84,7 @@
 		B063818A214504E5004BC4DC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B0B003A7214632550019B5FD /* iOS */,
 				B06381AC21450825004BC4DC /* Validatable.swift */,
 				B06381B021450A52004BC4DC /* String+Validatable.swift */,
 				B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */,
@@ -91,8 +92,6 @@
 				B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */,
 				B06381B921451377004BC4DC /* EmailRule.swift */,
 				B06381BB214515B3004BC4DC /* EmailError.swift */,
-				B063819421450513004BC4DC /* Info.plist */,
-				B063819321450513004BC4DC /* TinyValidation.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -127,6 +126,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		B0B003A7214632550019B5FD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B063819421450513004BC4DC /* Info.plist */,
+				B063819321450513004BC4DC /* TinyValidation.h */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -141,9 +149,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B063818F21450513004BC4DC /* TinyValidation */ = {
+		B063818F21450513004BC4DC /* TinyValidation iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B063819621450513004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation" */;
+			buildConfigurationList = B063819621450513004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation iOS" */;
 			buildPhases = (
 				B063818B21450513004BC4DC /* Headers */,
 				B063818C21450513004BC4DC /* Sources */,
@@ -154,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = TinyValidation;
+			name = "TinyValidation iOS";
 			productName = TinyValidation;
 			productReference = B063819021450513004BC4DC /* TinyValidation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B063819D21450674004BC4DC /* TinyValidation Tests */ = {
+		B063819D21450674004BC4DC /* TinyValidation iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation Tests" */;
+			buildConfigurationList = B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation iOS Tests" */;
 			buildPhases = (
 				B063819A21450674004BC4DC /* Sources */,
 				B063819B21450674004BC4DC /* Frameworks */,
@@ -173,7 +181,7 @@
 			dependencies = (
 				B06381A521450675004BC4DC /* PBXTargetDependency */,
 			);
-			name = "TinyValidation Tests";
+			name = "TinyValidation iOS Tests";
 			productName = "TinyValidation Tests";
 			productReference = B063819E21450674004BC4DC /* TinyValidation Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -208,8 +216,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B063818F21450513004BC4DC /* TinyValidation */,
-				B063819D21450674004BC4DC /* TinyValidation Tests */,
+				B063818F21450513004BC4DC /* TinyValidation iOS */,
+				B063819D21450674004BC4DC /* TinyValidation iOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +292,7 @@
 /* Begin PBXTargetDependency section */
 		B06381A521450675004BC4DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B063818F21450513004BC4DC /* TinyValidation */;
+			target = B063818F21450513004BC4DC /* TinyValidation iOS */;
 			targetProxy = B06381A421450675004BC4DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -293,14 +301,20 @@
 		B06381882145049C004BC4DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tinyworld.$(PROJECT_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 			};
 			name = Debug;
 		};
 		B06381892145049C004BC4DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tinyworld.$(PROJECT_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 			};
 			name = Release;
 		};
@@ -362,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,8 +386,9 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.TinyValidation;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -437,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,8 +461,9 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.TinyValidation;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(inherited)";
+				PRODUCT_NAME = "$(inherited)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -524,8 +540,9 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tinyworld.TinyValidation-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)-Tests";
+				PRODUCT_MODULE_NAME = "$(inherited)_Tests";
+				PRODUCT_NAME = "$(inherited) Tests";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -591,8 +608,9 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tinyworld.TinyValidation-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)-Tests";
+				PRODUCT_MODULE_NAME = "$(inherited)_Tests";
+				PRODUCT_NAME = "$(inherited) Tests";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -614,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B063819621450513004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation" */ = {
+		B063819621450513004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B063819721450513004BC4DC /* Debug */,
@@ -623,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation Tests" */ = {
+		B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B06381A721450675004BC4DC /* Debug */,
