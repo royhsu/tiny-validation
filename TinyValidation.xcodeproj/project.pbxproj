@@ -16,11 +16,16 @@
 		B06381B8214511A1004BC4DC /* Validatable+ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */; };
 		B06381BA21451377004BC4DC /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381B921451377004BC4DC /* EmailRule.swift */; };
 		B06381BC214515B3004BC4DC /* EmailError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381BB214515B3004BC4DC /* EmailError.swift */; };
-		B06381C221451BCC004BC4DC /* XCTSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381BE21451967004BC4DC /* XCTSuccess.swift */; };
 		B06381C521451DC5004BC4DC /* MultipleRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */; };
 		B06381C821451E04004BC4DC /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C621451E00004BC4DC /* PasswordRule.swift */; };
 		B06381CB21451E71004BC4DC /* PasswordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C921451E60004BC4DC /* PasswordError.swift */; };
 		B06381CE2145358D004BC4DC /* Numberic+Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */; };
+		B07A2C40215A1D43002EFE87 /* NonEmptyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */; };
+		B07A2C43215A1D66002EFE87 /* TinyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07A2C42215A1D66002EFE87 /* TinyCore.framework */; };
+		B07A2C45215A1D95002EFE87 /* NonEmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C44215A1D95002EFE87 /* NonEmptyError.swift */; };
+		B07A2C48215A1DE8002EFE87 /* NonEmptyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C46215A1DE5002EFE87 /* NonEmptyTests.swift */; };
+		B07A2C4C215A1EBA002EFE87 /* XCTUnwrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C4A215A1EBA002EFE87 /* XCTUnwrapped.swift */; };
+		B07A2C4D215A1EBA002EFE87 /* XCTSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C4B215A1EBA002EFE87 /* XCTSuccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 		B063819021450513004BC4DC /* TinyValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B063819321450513004BC4DC /* TinyValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyValidation.h; sourceTree = "<group>"; };
 		B063819421450513004BC4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B063819E21450674004BC4DC /* TinyValidation Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TinyValidation Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B063819E21450674004BC4DC /* TinyValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06381AA214506AE004BC4DC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B06381AC21450825004BC4DC /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		B06381B021450A52004BC4DC /* String+Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validatable.swift"; sourceTree = "<group>"; };
@@ -46,11 +51,16 @@
 		B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validatable+ValidationRule.swift"; sourceTree = "<group>"; };
 		B06381B921451377004BC4DC /* EmailRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRule.swift; sourceTree = "<group>"; };
 		B06381BB214515B3004BC4DC /* EmailError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailError.swift; sourceTree = "<group>"; };
-		B06381BE21451967004BC4DC /* XCTSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTSuccess.swift; sourceTree = "<group>"; };
 		B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleRulesTests.swift; sourceTree = "<group>"; };
 		B06381C621451E00004BC4DC /* PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
 		B06381C921451E60004BC4DC /* PasswordError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordError.swift; sourceTree = "<group>"; };
 		B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numberic+Validatable.swift"; sourceTree = "<group>"; };
+		B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyRule.swift; sourceTree = "<group>"; };
+		B07A2C42215A1D66002EFE87 /* TinyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TinyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07A2C44215A1D95002EFE87 /* NonEmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyError.swift; sourceTree = "<group>"; };
+		B07A2C46215A1DE5002EFE87 /* NonEmptyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyTests.swift; sourceTree = "<group>"; };
+		B07A2C4A215A1EBA002EFE87 /* XCTUnwrapped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTUnwrapped.swift; sourceTree = "<group>"; };
+		B07A2C4B215A1EBA002EFE87 /* XCTSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTSuccess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07A2C43215A1D66002EFE87 /* TinyCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 				B063818A214504E5004BC4DC /* Sources */,
 				B06381A9214506AE004BC4DC /* Tests */,
 				B063819121450513004BC4DC /* Products */,
+				B07A2C41215A1D66002EFE87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +104,8 @@
 				B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */,
 				B06381B921451377004BC4DC /* EmailRule.swift */,
 				B06381BB214515B3004BC4DC /* EmailError.swift */,
+				B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */,
+				B07A2C44215A1D95002EFE87 /* NonEmptyError.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -100,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B063819021450513004BC4DC /* TinyValidation.framework */,
-				B063819E21450674004BC4DC /* TinyValidation Tests.xctest */,
+				B063819E21450674004BC4DC /* TinyValidationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,20 +122,30 @@
 		B06381A9214506AE004BC4DC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B07A2C49215A1EBA002EFE87 /* Helpers */,
 				B06381B221450C72004BC4DC /* EmailRuleTests.swift */,
+				B07A2C46215A1DE5002EFE87 /* NonEmptyTests.swift */,
 				B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */,
 				B06381C621451E00004BC4DC /* PasswordRule.swift */,
 				B06381C921451E60004BC4DC /* PasswordError.swift */,
-				B06381BD21451953004BC4DC /* Helpers */,
 				B06381AA214506AE004BC4DC /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		B06381BD21451953004BC4DC /* Helpers */ = {
+		B07A2C41215A1D66002EFE87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B06381BE21451967004BC4DC /* XCTSuccess.swift */,
+				B07A2C42215A1D66002EFE87 /* TinyCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B07A2C49215A1EBA002EFE87 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B07A2C4A215A1EBA002EFE87 /* XCTUnwrapped.swift */,
+				B07A2C4B215A1EBA002EFE87 /* XCTSuccess.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -167,9 +191,9 @@
 			productReference = B063819021450513004BC4DC /* TinyValidation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B063819D21450674004BC4DC /* TinyValidation iOS Tests */ = {
+		B063819D21450674004BC4DC /* TinyValidationTests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation iOS Tests" */;
+			buildConfigurationList = B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidationTests iOS" */;
 			buildPhases = (
 				B063819A21450674004BC4DC /* Sources */,
 				B063819B21450674004BC4DC /* Frameworks */,
@@ -181,9 +205,9 @@
 			dependencies = (
 				B06381A521450675004BC4DC /* PBXTargetDependency */,
 			);
-			name = "TinyValidation iOS Tests";
+			name = "TinyValidationTests iOS";
 			productName = "TinyValidation Tests";
-			productReference = B063819E21450674004BC4DC /* TinyValidation Tests.xctest */;
+			productReference = B063819E21450674004BC4DC /* TinyValidationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +241,7 @@
 			projectRoot = "";
 			targets = (
 				B063818F21450513004BC4DC /* TinyValidation iOS */,
-				B063819D21450674004BC4DC /* TinyValidation iOS Tests */,
+				B063819D21450674004BC4DC /* TinyValidationTests iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -269,9 +293,11 @@
 				B06381B621451168004BC4DC /* ValidationRule.swift in Sources */,
 				B06381B121450A52004BC4DC /* String+Validatable.swift in Sources */,
 				B06381BC214515B3004BC4DC /* EmailError.swift in Sources */,
+				B07A2C45215A1D95002EFE87 /* NonEmptyError.swift in Sources */,
 				B06381AD21450825004BC4DC /* Validatable.swift in Sources */,
 				B06381BA21451377004BC4DC /* EmailRule.swift in Sources */,
 				B06381CE2145358D004BC4DC /* Numberic+Validatable.swift in Sources */,
+				B07A2C40215A1D43002EFE87 /* NonEmptyRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07A2C4C215A1EBA002EFE87 /* XCTUnwrapped.swift in Sources */,
 				B06381C821451E04004BC4DC /* PasswordRule.swift in Sources */,
+				B07A2C4D215A1EBA002EFE87 /* XCTSuccess.swift in Sources */,
+				B07A2C48215A1DE8002EFE87 /* NonEmptyTests.swift in Sources */,
 				B06381B421450C78004BC4DC /* EmailRuleTests.swift in Sources */,
 				B06381C521451DC5004BC4DC /* MultipleRulesTests.swift in Sources */,
-				B06381C221451BCC004BC4DC /* XCTSuccess.swift in Sources */,
 				B06381CB21451E71004BC4DC /* PasswordError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,7 +329,7 @@
 		B06381882145049C004BC4DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tinyworld.$(PROJECT_NAME)";
 				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
@@ -311,7 +339,7 @@
 		B06381892145049C004BC4DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tinyworld.$(PROJECT_NAME)";
 				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
@@ -540,9 +568,9 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)-Tests";
-				PRODUCT_MODULE_NAME = "$(inherited)_Tests";
-				PRODUCT_NAME = "$(inherited) Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)Tests";
+				PRODUCT_MODULE_NAME = "$(inherited)Tests";
+				PRODUCT_NAME = "$(inherited)Tests";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -608,9 +636,9 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)-Tests";
-				PRODUCT_MODULE_NAME = "$(inherited)_Tests";
-				PRODUCT_NAME = "$(inherited) Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)Tests";
+				PRODUCT_MODULE_NAME = "$(inherited)Tests";
+				PRODUCT_NAME = "$(inherited)Tests";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -641,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidation iOS Tests" */ = {
+		B06381A621450675004BC4DC /* Build configuration list for PBXNativeTarget "TinyValidationTests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B06381A721450675004BC4DC /* Debug */,
