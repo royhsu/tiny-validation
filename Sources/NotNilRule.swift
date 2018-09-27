@@ -20,3 +20,15 @@ public struct NotNilRule<Value>: ValidationRule {
     }
 
 }
+
+public extension AnyValidationRule {
+    
+    public static var notNil: AnyValidationRule<Value> {
+        
+        return AnyValidationRule(
+            NotNilRule()
+        )
+        
+    }
+    
+}
