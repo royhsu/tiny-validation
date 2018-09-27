@@ -23,8 +23,15 @@ internal final class EmailRuleTests: XCTestCase {
             try "invalid email".validated(by: EmailRule.standard)
         ) { error in
 
-            if case EmailError.invalidFormat = error { XCTSuccess() }
-            else { XCTFail("Unexpected error: \(error).") }
+            if case EmailError.invalidFormat = error {
+
+                XCTSuccess()
+
+                return
+
+            }
+
+            XCTFail("Unexpected error: \(error).")
 
         }
 

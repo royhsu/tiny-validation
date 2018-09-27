@@ -18,7 +18,7 @@ internal enum PasswordRule: ValidationRule {
     @discardableResult
     internal func validate(_ value: String?) throws -> String {
 
-        let value = try value.validated(
+        let value = try value.explicitlyValidated(
             by: NotNilRule()
         )
 

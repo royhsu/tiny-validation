@@ -18,7 +18,7 @@ internal final class NotNilRuleTests: XCTestCase {
         let message: String? = "hello"
 
         XCTAssertNoThrow(
-            try message?.validated(
+            try message.explicitlyValidated(
                 by: NotNilRule()
             )
         )
@@ -26,7 +26,7 @@ internal final class NotNilRuleTests: XCTestCase {
         let nilMessage: String? = nil
 
         XCTAssertThrowsError(
-            try nilMessage.validated(
+            try nilMessage.explicitlyValidated(
                 by: NotNilRule()
             )
         ) { error in

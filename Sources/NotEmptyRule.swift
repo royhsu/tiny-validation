@@ -15,7 +15,7 @@ public struct NotEmptyRule<Value>: ValidationRule where Value: Emptible {
 
     public func validate(_ value: Value?) throws -> Value {
 
-        let value = try value.validated(
+        let value = try value.explicitlyValidated(
             by: NotNilRule()
         )
 

@@ -24,8 +24,6 @@
 		B06F6E8A215CB0B500BBCF0F /* NotNilRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E88215CB0AD00BBCF0F /* NotNilRuleTests.swift */; };
 		B06F6E8C215CB3EB00BBCF0F /* NotNilError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E8B215CB3EB00BBCF0F /* NotNilError.swift */; };
 		B06F6E8F215CBB6E00BBCF0F /* Optional+Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E8E215CBB6E00BBCF0F /* Optional+Validatable.swift */; };
-		B06F6E91215CBC9C00BBCF0F /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E90215CBC9C00BBCF0F /* RequiredRule.swift */; };
-		B06F6E94215CBCB500BBCF0F /* RequiredRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E92215CBCAB00BBCF0F /* RequiredRuleTests.swift */; };
 		B07A2C40215A1D43002EFE87 /* NotEmptyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C3F215A1D43002EFE87 /* NotEmptyRule.swift */; };
 		B07A2C43215A1D66002EFE87 /* TinyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07A2C42215A1D66002EFE87 /* TinyCore.framework */; };
 		B07A2C45215A1D95002EFE87 /* NotEmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C44215A1D95002EFE87 /* NotEmptyError.swift */; };
@@ -66,8 +64,6 @@
 		B06F6E8B215CB3EB00BBCF0F /* NotNilError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotNilError.swift; sourceTree = "<group>"; };
 		B06F6E8D215CB6DA00BBCF0F /* TinyValidation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TinyValidation.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B06F6E8E215CBB6E00BBCF0F /* Optional+Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Validatable.swift"; sourceTree = "<group>"; };
-		B06F6E90215CBC9C00BBCF0F /* RequiredRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredRule.swift; sourceTree = "<group>"; };
-		B06F6E92215CBCAB00BBCF0F /* RequiredRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredRuleTests.swift; sourceTree = "<group>"; };
 		B07A2C3F215A1D43002EFE87 /* NotEmptyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmptyRule.swift; sourceTree = "<group>"; };
 		B07A2C42215A1D66002EFE87 /* TinyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TinyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07A2C44215A1D95002EFE87 /* NotEmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmptyError.swift; sourceTree = "<group>"; };
@@ -120,7 +116,6 @@
 				B06F6E8B215CB3EB00BBCF0F /* NotNilError.swift */,
 				B07A2C3F215A1D43002EFE87 /* NotEmptyRule.swift */,
 				B07A2C44215A1D95002EFE87 /* NotEmptyError.swift */,
-				B06F6E90215CBC9C00BBCF0F /* RequiredRule.swift */,
 				B06381B921451377004BC4DC /* EmailRule.swift */,
 				B06381BB214515B3004BC4DC /* EmailError.swift */,
 				B06F6E8D215CB6DA00BBCF0F /* TinyValidation.playground */,
@@ -143,7 +138,6 @@
 				B07A2C49215A1EBA002EFE87 /* Helpers */,
 				B06F6E88215CB0AD00BBCF0F /* NotNilRuleTests.swift */,
 				B07A2C46215A1DE5002EFE87 /* NotEmptyTests.swift */,
-				B06F6E92215CBCAB00BBCF0F /* RequiredRuleTests.swift */,
 				B06381B221450C72004BC4DC /* EmailRuleTests.swift */,
 				B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */,
 				B06381C621451E00004BC4DC /* PasswordRule.swift */,
@@ -315,7 +309,6 @@
 				B06381B121450A52004BC4DC /* String+Validatable.swift in Sources */,
 				B06381BC214515B3004BC4DC /* EmailError.swift in Sources */,
 				B07A2C45215A1D95002EFE87 /* NotEmptyError.swift in Sources */,
-				B06F6E91215CBC9C00BBCF0F /* RequiredRule.swift in Sources */,
 				B06381AD21450825004BC4DC /* Validatable.swift in Sources */,
 				B06381BA21451377004BC4DC /* EmailRule.swift in Sources */,
 				B06F6E87215CB03E00BBCF0F /* NotNilRule.swift in Sources */,
@@ -331,7 +324,6 @@
 			files = (
 				B07A2C4C215A1EBA002EFE87 /* XCTUnwrapped.swift in Sources */,
 				B06381C821451E04004BC4DC /* PasswordRule.swift in Sources */,
-				B06F6E94215CBCB500BBCF0F /* RequiredRuleTests.swift in Sources */,
 				B07A2C4D215A1EBA002EFE87 /* XCTSuccess.swift in Sources */,
 				B07A2C48215A1DE8002EFE87 /* NotEmptyTests.swift in Sources */,
 				B06381B421450C78004BC4DC /* EmailRuleTests.swift in Sources */,

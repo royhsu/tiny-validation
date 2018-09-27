@@ -11,19 +11,19 @@
 public extension Optional {
 
     @discardableResult
-    public func validated(
+    public func explicitlyValidated(
         by validator: (Optional<Wrapped>) throws -> Wrapped
     )
     rethrows -> Wrapped { return try validator(self) }
 
     @discardableResult
-    public func validated<R>(by rule: R) throws -> Wrapped
+    public func explicitlyValidated<R>(by rule: R) throws -> Wrapped
     where
         R: ValidationRule,
         R.Value == Wrapped { return try rule.validate(self) }
 
     @discardableResult
-    public func validated<C, R>(by rules: C) throws -> Wrapped
+    public func explicitlyValidated<C, R>(by rules: C) throws -> Wrapped
     where
         C: Collection,
         C.Element == R,
@@ -32,11 +32,11 @@ public extension Optional {
 
         let value = try rules.reduce(self) { currentValue, rule in
 
-            return try currentValue.validated(by: rule)
+            return try currentValue.explicitlyValidated(by: rule)
 
         }
 
-        return try value.validated(
+        return try value.explicitlyValidated(
             by: NotNilRule()
         )
 
