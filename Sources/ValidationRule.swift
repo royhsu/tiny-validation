@@ -27,6 +27,7 @@ public struct AnyValidationRule<Value>: ValidationRule {
         R: ValidationRule,
         R.Value == Value { self._validate = rule.validate }
 
+    @discardableResult
     public func validate(_ value: Value?) throws -> Value { return try _validate(value) }
 
 }
