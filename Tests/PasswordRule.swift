@@ -16,7 +16,11 @@ internal enum PasswordRule: ValidationRule {
     case maximumLength(Int)
 
     @discardableResult
-    func validate(_ value: String) throws -> String {
+    internal func validate(_ value: String?) throws -> String {
+
+        let value = try value.validated(
+            by: NotNilRule()
+        )
 
         switch self {
 

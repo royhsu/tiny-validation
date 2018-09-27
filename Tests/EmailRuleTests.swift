@@ -13,7 +13,7 @@ import XCTest
 
 internal final class EmailRuleTests: XCTestCase {
 
-    internal final func testValidateEmail() {
+    internal final func testValidate() {
 
         XCTAssertNoThrow(
             try "hello@example.com".validated(by: EmailRule.standard)

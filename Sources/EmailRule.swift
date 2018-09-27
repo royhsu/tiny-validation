@@ -14,16 +14,20 @@ public struct EmailRule: ValidationRule {
     private init(regex: String) { self.regex = regex }
 
     @discardableResult
-    public func validate(_ value: String) throws -> String {
+    public func validate(_ email: String?) throws -> String {
 
-        let range = value.range(
+        let email = try email.validated(
+            by: NotNilRule()
+        )
+
+        let range = email.range(
             of: regex,
             options: .regularExpression
         )
 
         if range == nil { throw EmailError.invalidFormat }
 
-        return value
+        return email
 
     }
 
