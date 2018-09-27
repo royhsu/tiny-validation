@@ -6,7 +6,7 @@ disabled_rules:
 excluded:
   - Carthage
   - Pods
-  - Examples/iOS/Library
+  - Sources/*.playground
 identifier_name:
   excluded:
     - id

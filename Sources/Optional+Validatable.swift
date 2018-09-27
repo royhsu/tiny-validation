@@ -22,5 +22,25 @@ public extension Optional {
         R: ValidationRule,
         R.Value == Wrapped { return try rule.validate(self) }
 
+    @discardableResult
+    public func validated<C, R>(by rules: C) throws -> Wrapped
+    where
+        C: Collection,
+        C.Element == R,
+        R: ValidationRule,
+        R.Value == Wrapped {
+
+        let value = try rules.reduce(self) { currentValue, rule in
+
+            return try currentValue.validated(by: rule)
+
+        }
+
+        return try value.validated(
+            by: NotNilRule()
+        )
+
+    }
+
 }
 // swiftlint:enable syntactic_sugar
