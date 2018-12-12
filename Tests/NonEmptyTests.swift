@@ -1,39 +1,33 @@
 //
-//  NotEmptyTests.swift
-//  TinyValidationTests
+//  NonEmptyTests.swift
+//  TinyValidation Tests
 //
 //  Created by Roy Hsu on 2018/9/25.
 //
 
-// MARK: - NotEmptyTests
+// MARK: - NonEmptyTests
 
 import XCTest
 
 @testable import TinyValidation
 
-internal final class NotEmptyTests: XCTestCase {
+internal final class NonEmptyTests: XCTestCase {
 
     internal final func testValidateNonEmpty() {
 
         XCTAssertNoThrow(
             try "hello".validated(
-                by: NotEmptyRule()
+                by: NonEmptyRule()
             )
         )
 
         XCTAssertThrowsError(
             try "".validated(
-                by: NotEmptyRule()
+                by: NonEmptyRule()
             )
         ) { error in
 
-            if case NotEmptyError.isEmpty = error {
-
-                XCTSuccess()
-
-                return
-
-            }
+            if error is NonEmptyError { XCTSuccess(); return }
 
             XCTFail("Unexpected error: \(error).")
 

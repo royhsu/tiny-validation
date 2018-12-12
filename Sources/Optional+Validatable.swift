@@ -10,9 +10,9 @@
 // swiftlint:disable syntactic_sugar
 public extension Optional {
 
-    /// Similiar to explicitlyValidated(by rule:)
+    /// Similiar to explicitValidated(by rule:)
     @discardableResult
-    public func explicitlyValidated(
+    public func explicitValidated(
         by validator: (Optional<Wrapped>) throws -> Wrapped
     )
     rethrows -> Wrapped { return try validator(self) }
@@ -26,17 +26,14 @@ public extension Optional {
     /// var message: String? = nil
     ///
     /// // The validation rule will be triggered.
-    /// let result: String = try message.explicitlyValidated(by: rule)
+    /// let result: String = try message.explicitValidated(by: rule)
     ///
     /// // The validation will be skipped due to optional chaining
     /// let result: String? = try message?.validated(by: rule)
     /// ```
     ///
     @discardableResult
-    public func explicitlyValidated<R>(by rule: R) throws -> Wrapped
-    where
-        R: ValidationRule,
-        R.Value == Wrapped { return try rule.validate(self) }
+    public func explicitValidated<R: ValidationRule>(by rule: R) throws -> Wrapped where R.Value == Wrapped { return try rule.validate(self) }
 
 }
 // swiftlint:enable syntactic_sugar

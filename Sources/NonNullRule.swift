@@ -1,13 +1,13 @@
 //
-//  NonnullRule.swift
+//  NonNullRule.swift
 //  TinyValidation
 //
 //  Created by Roy Hsu on 2018/9/27.
 //
 
-// MARK: - NonnullRule
+// MARK: - NonNullRule
 
-public struct NonnullRule<Value>: ValidationRule {
+public struct NonNullRule<Value>: ValidationRule {
 
     public init() { }
 
@@ -15,7 +15,7 @@ public struct NonnullRule<Value>: ValidationRule {
 
         if let value = value { return value }
 
-        throw NotNilError()
+        throw NonNullError()
 
     }
 
@@ -23,10 +23,10 @@ public struct NonnullRule<Value>: ValidationRule {
 
 public extension AnyValidationRule {
 
-    public static var notNil: AnyValidationRule<Value> {
+    public static var nonNull: AnyValidationRule<Value> {
 
         return AnyValidationRule(
-            NonnullRule()
+            NonNullRule()
         )
 
     }

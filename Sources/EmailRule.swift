@@ -16,8 +16,8 @@ public struct EmailRule: ValidationRule {
     @discardableResult
     public func validate(_ email: String?) throws -> String {
 
-        let email = try email.explicitlyValidated(
-            by: NotNilRule()
+        let email = try email.explicitValidated(
+            by: NonNullRule()
         )
 
         let range = email.range(

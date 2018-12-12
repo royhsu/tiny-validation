@@ -15,12 +15,10 @@ public extension Validatable {
     where Rule.Value == Self { return try validated(by: rule.validate) }
 
     @discardableResult
-    public func validated<C, R>(by rules: C)
+    public func validated<C: Collection, R: ValidationRule>(by rules: C)
     throws -> Self
     where
-        C: Collection,
         C.Element == R,
-        R: ValidationRule,
         R.Value == Self {
 
         return try rules.reduce(self) { currentValue, rule in

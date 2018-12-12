@@ -16,20 +16,20 @@
 		B06381B8214511A1004BC4DC /* Validatable+ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */; };
 		B06381BA21451377004BC4DC /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381B921451377004BC4DC /* EmailRule.swift */; };
 		B06381BC214515B3004BC4DC /* EmailError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381BB214515B3004BC4DC /* EmailError.swift */; };
-		B06381C521451DC5004BC4DC /* MultipleRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */; };
-		B06381C821451E04004BC4DC /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C621451E00004BC4DC /* PasswordRule.swift */; };
-		B06381CB21451E71004BC4DC /* PasswordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C921451E60004BC4DC /* PasswordError.swift */; };
+		B06381C521451DC5004BC4DC /* CountRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C321451DB4004BC4DC /* CountRulesTests.swift */; };
 		B06381CE2145358D004BC4DC /* Numberic+Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */; };
-		B06F6E87215CB03E00BBCF0F /* NotNilRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E86215CB03E00BBCF0F /* NotNilRule.swift */; };
-		B06F6E8A215CB0B500BBCF0F /* NotNilRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E88215CB0AD00BBCF0F /* NotNilRuleTests.swift */; };
-		B06F6E8C215CB3EB00BBCF0F /* NotNilError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E8B215CB3EB00BBCF0F /* NotNilError.swift */; };
+		B06F6E87215CB03E00BBCF0F /* NonNullRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E86215CB03E00BBCF0F /* NonNullRule.swift */; };
+		B06F6E8A215CB0B500BBCF0F /* NonNullRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E88215CB0AD00BBCF0F /* NonNullRuleTests.swift */; };
+		B06F6E8C215CB3EB00BBCF0F /* NonNullError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E8B215CB3EB00BBCF0F /* NonNullError.swift */; };
 		B06F6E8F215CBB6E00BBCF0F /* Optional+Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E8E215CBB6E00BBCF0F /* Optional+Validatable.swift */; };
-		B07A2C40215A1D43002EFE87 /* NotEmptyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C3F215A1D43002EFE87 /* NotEmptyRule.swift */; };
+		B07A2C40215A1D43002EFE87 /* NonEmptyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */; };
 		B07A2C43215A1D66002EFE87 /* TinyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07A2C42215A1D66002EFE87 /* TinyCore.framework */; };
-		B07A2C45215A1D95002EFE87 /* NotEmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C44215A1D95002EFE87 /* NotEmptyError.swift */; };
-		B07A2C48215A1DE8002EFE87 /* NotEmptyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C46215A1DE5002EFE87 /* NotEmptyTests.swift */; };
+		B07A2C45215A1D95002EFE87 /* NonEmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C44215A1D95002EFE87 /* NonEmptyError.swift */; };
+		B07A2C48215A1DE8002EFE87 /* NonEmptyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C46215A1DE5002EFE87 /* NonEmptyTests.swift */; };
 		B07A2C4C215A1EBA002EFE87 /* XCTUnwrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C4A215A1EBA002EFE87 /* XCTUnwrapped.swift */; };
 		B07A2C4D215A1EBA002EFE87 /* XCTSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C4B215A1EBA002EFE87 /* XCTSuccess.swift */; };
+		B0C8C35021C10C6600DED5BF /* CountError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C921451E60004BC4DC /* CountError.swift */; };
+		B0C8C35121C10C6600DED5BF /* CountRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381C621451E00004BC4DC /* CountRule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,19 +55,19 @@
 		B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validatable+ValidationRule.swift"; sourceTree = "<group>"; };
 		B06381B921451377004BC4DC /* EmailRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRule.swift; sourceTree = "<group>"; };
 		B06381BB214515B3004BC4DC /* EmailError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailError.swift; sourceTree = "<group>"; };
-		B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleRulesTests.swift; sourceTree = "<group>"; };
-		B06381C621451E00004BC4DC /* PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
-		B06381C921451E60004BC4DC /* PasswordError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordError.swift; sourceTree = "<group>"; };
+		B06381C321451DB4004BC4DC /* CountRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountRulesTests.swift; sourceTree = "<group>"; };
+		B06381C621451E00004BC4DC /* CountRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountRule.swift; sourceTree = "<group>"; };
+		B06381C921451E60004BC4DC /* CountError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountError.swift; sourceTree = "<group>"; };
 		B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numberic+Validatable.swift"; sourceTree = "<group>"; };
-		B06F6E86215CB03E00BBCF0F /* NotNilRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotNilRule.swift; sourceTree = "<group>"; };
-		B06F6E88215CB0AD00BBCF0F /* NotNilRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotNilRuleTests.swift; sourceTree = "<group>"; };
-		B06F6E8B215CB3EB00BBCF0F /* NotNilError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotNilError.swift; sourceTree = "<group>"; };
+		B06F6E86215CB03E00BBCF0F /* NonNullRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNullRule.swift; sourceTree = "<group>"; };
+		B06F6E88215CB0AD00BBCF0F /* NonNullRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNullRuleTests.swift; sourceTree = "<group>"; };
+		B06F6E8B215CB3EB00BBCF0F /* NonNullError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNullError.swift; sourceTree = "<group>"; };
 		B06F6E8D215CB6DA00BBCF0F /* TinyValidation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TinyValidation.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B06F6E8E215CBB6E00BBCF0F /* Optional+Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Validatable.swift"; sourceTree = "<group>"; };
-		B07A2C3F215A1D43002EFE87 /* NotEmptyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmptyRule.swift; sourceTree = "<group>"; };
+		B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyRule.swift; sourceTree = "<group>"; };
 		B07A2C42215A1D66002EFE87 /* TinyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TinyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B07A2C44215A1D95002EFE87 /* NotEmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmptyError.swift; sourceTree = "<group>"; };
-		B07A2C46215A1DE5002EFE87 /* NotEmptyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmptyTests.swift; sourceTree = "<group>"; };
+		B07A2C44215A1D95002EFE87 /* NonEmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyError.swift; sourceTree = "<group>"; };
+		B07A2C46215A1DE5002EFE87 /* NonEmptyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyTests.swift; sourceTree = "<group>"; };
 		B07A2C4A215A1EBA002EFE87 /* XCTUnwrapped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTUnwrapped.swift; sourceTree = "<group>"; };
 		B07A2C4B215A1EBA002EFE87 /* XCTSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTSuccess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,12 +112,14 @@
 				B06381CD2145358D004BC4DC /* Numberic+Validatable.swift */,
 				B06381B521451168004BC4DC /* ValidationRule.swift */,
 				B06381B7214511A1004BC4DC /* Validatable+ValidationRule.swift */,
-				B06F6E86215CB03E00BBCF0F /* NotNilRule.swift */,
-				B06F6E8B215CB3EB00BBCF0F /* NotNilError.swift */,
-				B07A2C3F215A1D43002EFE87 /* NotEmptyRule.swift */,
-				B07A2C44215A1D95002EFE87 /* NotEmptyError.swift */,
+				B06F6E86215CB03E00BBCF0F /* NonNullRule.swift */,
+				B06F6E8B215CB3EB00BBCF0F /* NonNullError.swift */,
+				B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */,
+				B07A2C44215A1D95002EFE87 /* NonEmptyError.swift */,
 				B06381B921451377004BC4DC /* EmailRule.swift */,
 				B06381BB214515B3004BC4DC /* EmailError.swift */,
+				B06381C621451E00004BC4DC /* CountRule.swift */,
+				B06381C921451E60004BC4DC /* CountError.swift */,
 				B06F6E8D215CB6DA00BBCF0F /* TinyValidation.playground */,
 			);
 			path = Sources;
@@ -136,12 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				B07A2C49215A1EBA002EFE87 /* Helpers */,
-				B06F6E88215CB0AD00BBCF0F /* NotNilRuleTests.swift */,
-				B07A2C46215A1DE5002EFE87 /* NotEmptyTests.swift */,
+				B06F6E88215CB0AD00BBCF0F /* NonNullRuleTests.swift */,
+				B07A2C46215A1DE5002EFE87 /* NonEmptyTests.swift */,
 				B06381B221450C72004BC4DC /* EmailRuleTests.swift */,
-				B06381C321451DB4004BC4DC /* MultipleRulesTests.swift */,
-				B06381C621451E00004BC4DC /* PasswordRule.swift */,
-				B06381C921451E60004BC4DC /* PasswordError.swift */,
+				B06381C321451DB4004BC4DC /* CountRulesTests.swift */,
 				B06381AA214506AE004BC4DC /* Info.plist */,
 			);
 			path = Tests;
@@ -303,17 +303,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C8C35021C10C6600DED5BF /* CountError.swift in Sources */,
 				B06381B8214511A1004BC4DC /* Validatable+ValidationRule.swift in Sources */,
+				B0C8C35121C10C6600DED5BF /* CountRule.swift in Sources */,
 				B06381B621451168004BC4DC /* ValidationRule.swift in Sources */,
-				B06F6E8C215CB3EB00BBCF0F /* NotNilError.swift in Sources */,
+				B06F6E8C215CB3EB00BBCF0F /* NonNullError.swift in Sources */,
 				B06381B121450A52004BC4DC /* String+Validatable.swift in Sources */,
 				B06381BC214515B3004BC4DC /* EmailError.swift in Sources */,
-				B07A2C45215A1D95002EFE87 /* NotEmptyError.swift in Sources */,
+				B07A2C45215A1D95002EFE87 /* NonEmptyError.swift in Sources */,
 				B06381AD21450825004BC4DC /* Validatable.swift in Sources */,
 				B06381BA21451377004BC4DC /* EmailRule.swift in Sources */,
-				B06F6E87215CB03E00BBCF0F /* NotNilRule.swift in Sources */,
+				B06F6E87215CB03E00BBCF0F /* NonNullRule.swift in Sources */,
 				B06381CE2145358D004BC4DC /* Numberic+Validatable.swift in Sources */,
-				B07A2C40215A1D43002EFE87 /* NotEmptyRule.swift in Sources */,
+				B07A2C40215A1D43002EFE87 /* NonEmptyRule.swift in Sources */,
 				B06F6E8F215CBB6E00BBCF0F /* Optional+Validatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,13 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07A2C4C215A1EBA002EFE87 /* XCTUnwrapped.swift in Sources */,
-				B06381C821451E04004BC4DC /* PasswordRule.swift in Sources */,
 				B07A2C4D215A1EBA002EFE87 /* XCTSuccess.swift in Sources */,
-				B07A2C48215A1DE8002EFE87 /* NotEmptyTests.swift in Sources */,
+				B07A2C48215A1DE8002EFE87 /* NonEmptyTests.swift in Sources */,
 				B06381B421450C78004BC4DC /* EmailRuleTests.swift in Sources */,
-				B06381C521451DC5004BC4DC /* MultipleRulesTests.swift in Sources */,
-				B06381CB21451E71004BC4DC /* PasswordError.swift in Sources */,
-				B06F6E8A215CB0B500BBCF0F /* NotNilRuleTests.swift in Sources */,
+				B06381C521451DC5004BC4DC /* CountRulesTests.swift in Sources */,
+				B06F6E8A215CB0B500BBCF0F /* NonNullRuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
