@@ -33,7 +33,30 @@ public extension Optional {
     /// ```
     ///
     @discardableResult
-    public func explicitValidated<R: ValidationRule>(by rule: R) throws -> Wrapped where R.Value == Wrapped { return try rule.validate(self) }
+    public func explicitValidated<Rule>(by rule: Rule)
+    throws -> Wrapped
+    where
+        Rule: ValidationRule,
+        Rule.Value == Wrapped { return try rule.validate(self) }
 
+    @discardableResult
+    public func explicitValidated<Rule>(by rules: [Rule])
+    throws -> Wrapped
+    where
+        Rule: ValidationRule,
+        Rule.Value == Wrapped {
+            
+        let value = try rules.reduce(self) { currentValue, rule in
+            
+            return try currentValue.explicitValidated(by: rule)
+            
+        }
+        
+        guard let validValue = value else { throw NonNullError() }
+        
+        return validValue
+            
+    }
+    
 }
 // swiftlint:enable syntactic_sugar
