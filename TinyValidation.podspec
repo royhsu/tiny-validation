@@ -11,5 +11,5 @@ Pod::Spec.new do |spec|
   spec.ios.source_files = 'Sources/iOS/*.swift'
   spec.ios.deployment_target = '10.0'
   spec.swift_version = '4.2'
-  spec.dependency 'TinyCore'
+  spec.dependency 'TinyCore', '0.7.0'
 end

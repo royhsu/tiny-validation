@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05AC1BB221E842A00DFDB73 /* TinyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05AC1BA221E842A00DFDB73 /* TinyCore.framework */; };
 		B063819521450513004BC4DC /* TinyValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = B063819321450513004BC4DC /* TinyValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B06381A321450675004BC4DC /* TinyValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B063819021450513004BC4DC /* TinyValidation.framework */; };
 		B06381AD21450825004BC4DC /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06381AC21450825004BC4DC /* Validatable.swift */; };
@@ -23,7 +24,6 @@
 		B06F6E8C215CB3EB00BBCF0F /* NonNullError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E8B215CB3EB00BBCF0F /* NonNullError.swift */; };
 		B06F6E8F215CBB6E00BBCF0F /* Optional+Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F6E8E215CBB6E00BBCF0F /* Optional+Validatable.swift */; };
 		B07A2C40215A1D43002EFE87 /* NonEmptyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */; };
-		B07A2C43215A1D66002EFE87 /* TinyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07A2C42215A1D66002EFE87 /* TinyCore.framework */; };
 		B07A2C45215A1D95002EFE87 /* NonEmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C44215A1D95002EFE87 /* NonEmptyError.swift */; };
 		B07A2C48215A1DE8002EFE87 /* NonEmptyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C46215A1DE5002EFE87 /* NonEmptyTests.swift */; };
 		B07A2C4C215A1EBA002EFE87 /* XCTUnwrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A2C4A215A1EBA002EFE87 /* XCTUnwrapped.swift */; };
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B05AC1BA221E842A00DFDB73 /* TinyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TinyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B063819021450513004BC4DC /* TinyValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B063819321450513004BC4DC /* TinyValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyValidation.h; sourceTree = "<group>"; };
 		B063819421450513004BC4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07A2C43215A1D66002EFE87 /* TinyCore.framework in Frameworks */,
+				B05AC1BB221E842A00DFDB73 /* TinyCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +151,7 @@
 		B07A2C41215A1D66002EFE87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B05AC1BA221E842A00DFDB73 /* TinyCore.framework */,
 				B07A2C42215A1D66002EFE87 /* TinyCore.framework */,
 			);
 			name = Frameworks;

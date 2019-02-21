@@ -45,18 +45,18 @@ public extension Optional {
     where
         Rule: ValidationRule,
         Rule.Value == Wrapped {
-            
+
         let value = try rules.reduce(self) { currentValue, rule in
-            
+
             return try currentValue.explicitValidated(by: rule)
-            
+
         }
-        
+
         guard let validValue = value else { throw NonNullError() }
-        
+
         return validValue
-            
+
     }
-    
+
 }
 // swiftlint:enable syntactic_sugar
