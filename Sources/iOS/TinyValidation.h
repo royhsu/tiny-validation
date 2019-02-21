@@ -5,7 +5,7 @@
 //  Created by Roy Hsu on 2018/9/9.
 //
 
-@import TinyCore;
+#import <TinyCore/TinyCore.h>;
 
 FOUNDATION_EXPORT double TinyValidationVersionNumber;
 
