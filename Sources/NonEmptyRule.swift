@@ -7,6 +7,8 @@
 
 // MARK: - NonEmptyRule
 
+import TinyCore
+
 public struct NonEmptyRule<Value>: ValidationRule where Value: Emptible {
 
     public init() { }

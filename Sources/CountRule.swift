@@ -7,6 +7,8 @@
 
 // MARK: - CountRule
 
+import TinyCore
+
 public struct CountRule<Value>: ValidationRule where Value: Countable {
 
     public let range: ClosedRange<Int>
