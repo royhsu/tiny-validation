@@ -5,7 +5,10 @@ Pod::Spec.new do |spec|
   spec.summary = 'A fluent and elegant validation framework for Swift.'
   spec.homepage = 'https://github.com/royhsu/tiny-validation'
   spec.authors = { 'Roy Hsu' => 'roy.hsu@tinyworld.cc' }
-  spec.source = { :git => 'https://github.com/royhsu/tiny-validation.git', :tag => spec.version }
+  spec.source = { 
+    :git => 'https://github.com/royhsu/tiny-validation.git', 
+    :tag => spec.version
+  }
   spec.framework = 'Foundation'
   spec.source_files = 'Sources/*.swift'
   spec.ios.source_files = 'Sources/iOS/*.swift'
