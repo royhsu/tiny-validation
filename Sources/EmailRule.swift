@@ -38,3 +38,13 @@ public extension EmailRule {
     public static let standard = EmailRule(regex: "^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-+]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z‌​]{2,})$")
 
 }
+
+public extension AnyValidationRule where Value == String {
+    
+    public static func email(match rule: EmailRule = .standard) -> AnyValidationRule<Value> {
+        
+        return AnyValidationRule(rule)
+        
+    }
+    
+}

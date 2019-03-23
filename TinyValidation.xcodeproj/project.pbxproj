@@ -63,7 +63,6 @@
 		B06F6E86215CB03E00BBCF0F /* NonNullRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNullRule.swift; sourceTree = "<group>"; };
 		B06F6E88215CB0AD00BBCF0F /* NonNullRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNullRuleTests.swift; sourceTree = "<group>"; };
 		B06F6E8B215CB3EB00BBCF0F /* NonNullError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNullError.swift; sourceTree = "<group>"; };
-		B06F6E8D215CB6DA00BBCF0F /* TinyValidation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TinyValidation.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B06F6E8E215CBB6E00BBCF0F /* Optional+Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Validatable.swift"; sourceTree = "<group>"; };
 		B07A2C3F215A1D43002EFE87 /* NonEmptyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmptyRule.swift; sourceTree = "<group>"; };
 		B07A2C42215A1D66002EFE87 /* TinyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TinyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +120,6 @@
 				B06381BB214515B3004BC4DC /* EmailError.swift */,
 				B06381C621451E00004BC4DC /* CountRule.swift */,
 				B06381C921451E60004BC4DC /* CountError.swift */,
-				B06F6E8D215CB6DA00BBCF0F /* TinyValidation.playground */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
