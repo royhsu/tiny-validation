@@ -19,7 +19,7 @@ public protocol Validatable {
 
 // MARK: - Default Implementation
 
-public extension Validatable {
+extension Validatable {
 
     @discardableResult
     public func validated(

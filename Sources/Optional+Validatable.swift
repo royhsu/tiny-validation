@@ -8,7 +8,7 @@
 // MARK: - Validatable
 
 // swiftlint:disable syntactic_sugar
-public extension Optional {
+extension Optional {
 
     /// Similiar to explicitValidated(by rule:)
     @discardableResult
@@ -17,7 +17,8 @@ public extension Optional {
     )
     rethrows -> Wrapped { return try validator(self) }
 
-    /// If the nil value is one of requirements to validate, and you don't want to skip the validation by optional chaining.
+    /// If the nil value is one of requirements to validate, and you don't want
+    /// to skip the validation by optional chaining.
     /// Please use these two explicit validation methods.
     ///
     /// Example:

@@ -27,7 +27,7 @@ public struct NonEmptyRule<Value>: ValidationRule where Value: Emptible {
 
 }
 
-public extension AnyValidationRule where Value: Emptible {
+extension AnyValidationRule where Value: Emptible {
 
     public static var nonEmpty: AnyValidationRule<Value> {
 

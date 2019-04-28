@@ -33,8 +33,10 @@ public struct EmailRule: ValidationRule {
 
 }
 
-public extension EmailRule {
+extension EmailRule {
 
+    // swiftlint:disable line_length
     public static let standard = EmailRule(regex: "^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-+]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z‌​]{2,})$")
+    // swiftlint:enable line_length
 
 }

@@ -21,7 +21,7 @@ public struct NonNullRule<Value>: ValidationRule {
 
 }
 
-public extension AnyValidationRule {
+extension AnyValidationRule {
 
     public static var nonNull: AnyValidationRule<Value> {
 
