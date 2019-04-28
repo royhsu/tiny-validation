@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Sources/*.swift', 'Sources/**/*.swift', 'Sources/**/**/*.swift'
   spec.ios.source_files = 'Sources/iOS/*.swift'
   spec.ios.deployment_target = '10.0'
-  spec.swift_version = '4.2'
-  spec.dependency 'TinyCore', :git => 'https://github.com/royhsu/tiny-core.git', commit: => '814c49a06dad973e91d21b9508fe7568dcb2d95f'
+  spec.swift_version = '5.0'
+  spec.dependency 'TinyCore', '0.9.0'
 end

@@ -30,7 +30,7 @@ public struct CountRule<Value>: ValidationRule where Value: Countable {
 
 }
 
-public extension AnyValidationRule where Value: Countable {
+extension AnyValidationRule where Value: Countable {
 
     public static func count(in range: ClosedRange<Int>) -> AnyValidationRule<Value> {
 

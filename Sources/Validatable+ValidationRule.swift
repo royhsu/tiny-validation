@@ -7,7 +7,7 @@
 
 // MARK: - ValidationRule
 
-public extension Validatable {
+extension Validatable {
 
     @discardableResult
     public func validated<Rule: ValidationRule>(by rule: Rule)
